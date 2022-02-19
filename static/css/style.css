@@ -18,6 +18,7 @@ body {
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    z-index: 0;
 }
 
 .content {
@@ -32,7 +33,7 @@ body {
 }
 #MainPageVideo {
     height: 100vh;
-    z-index: -1;
+    z-index: 0;
 }
 
 #SoundIcon {
