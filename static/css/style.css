@@ -1,0 +1,452 @@
+@font-face { font-family: Eiko; src: url('PPEiko-Thin.otf'); }
+@font-face { font-family: Yandex Sans Display; src: url('YandexSansDisplay-Light.ttf'); }
+
+body {
+   margin: 0;
+   padding: 0;
+   background-color: #f3f3f2;
+   user-select: none;
+}
+
+.MainPageContainer {
+    position: relative;
+    width: 100%;
+    min-width: 100%;
+    min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.content {
+    margin-top: 40vh;
+    position: absolute;
+    text-align: center;
+    font-family: Eiko;
+    font-size: 400%;
+    color: #000000;
+    user-select: none;
+    z-index: 1;
+}
+#MainPageVideo {
+    height: 100vh;
+    z-index: -1;
+}
+
+#SoundIcon {
+    margin-top: 4vh;
+    position: relative;
+    transform: scale(2);
+    fill: black;
+    z-index: 1;
+}
+
+.ThemeIcon {
+    position: relative;
+    transform: scale(2);
+    fill: black;
+    z-index: 1;
+}
+
+.ThemeIcon1 {
+    position: absolute;
+    top: 6%;
+    right: 6%;
+    transform: scale(2);
+    fill: black;
+    z-index: 1;
+}
+.AndrewMaznin {
+    margin-top: 5%;
+    position: relative;
+    font-family: Yandex Sans Display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: calc(20px + 4vw);
+    line-height: 200%;
+    max-width: 80vw;
+    user-select: none;
+
+}
+
+.search {
+    position: relative;
+    min-width: 50vw;
+    min-height: 5vh;
+    background: #FFFFFF;
+    border: 4px solid #FFCC00;
+    box-sizing: border-box;
+    border-radius: 2vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-family: Yandex Sans Display;
+    font-size: calc(8px + 2vw);
+    color: #000000;
+}
+
+.work-yandex {
+    margin-left: 3%;
+    user-select: none;
+}
+@media (min-aspect-ratio: 1/1) {
+    .about-me {
+        margin-top: 2%;
+        position: relative;
+        background: #FFFFFF;
+        border-radius: 20px;
+        min-width: 50vw;
+        max-width: 60vw;
+        display: flex;
+        flex-direction: column;
+        color: #000000;
+    }
+
+    .passions {
+        margin-right: 1vh;
+        min-height: 55vh;
+        background: #FFFFFF;
+        border-radius: 20px;
+        display: flex;
+        flex-direction:column;
+    }
+    .about-me-subcontainer2 {
+        display: flex;
+        flex-direction: column;
+        max-width: 50%;
+    }
+    .github {
+        margin-left: 1vh;
+        background: #FFFFFF;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        text-decoration: none;
+        color:inherit;
+    }
+
+    .why-me {
+        margin-left: 1vh;
+        margin-top: 2vh;
+
+        background: #FFFFFF;
+        border-radius: 20px;
+        font-family: Yandex Sans Display;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .me-pic {
+        margin-left: 1vw;
+        margin-top: 1vw;
+        margin-bottom: 1vw;
+        margin-right: 1vw;
+        min-height: 40vh;
+        height: 40vh;
+        border-radius: 20px;
+        display: flex;
+    }
+}
+
+.person-icon {
+    margin-top: 1%;
+    margin-left: 1%;
+    width: 6%;
+}
+
+.about-me-text {
+    min-width: 6%;
+    margin-left: 2%;
+    font-size: calc(8px + 2vw);
+    font-family: Yandex Sans Display;
+    text-align: center;
+}
+
+.about-me-text1 {
+    min-width: 6%;
+    margin-left: 2%;
+    font-size: calc(8px + 1.5vw);
+    font-family: Yandex Sans Display;
+    text-align: center;
+}
+
+#about-me-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+}
+
+.about-me-subcontainer {
+    max-height: 10vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+.list {
+    width: 10%;
+}
+
+.about-me-list {
+    margin-left: 1vw;
+}
+
+.about-me-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2vh;
+}
+
+#burger-menu-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#burger-menu {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: 0;
+    left: 0;
+    border-radius: 0 0 18px 0;
+    background-color: #FFCC00;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.stripe {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+
+}
+#top {
+    margin-bottom: 1vh;
+}
+
+#bottom {
+    margin-top: 1vh;
+}
+
+#burger-menu-opened  {
+    position: relative;
+    top: 60px;
+    border-radius: 0 18px 18px 0;
+    background-color: #FFCC00;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    visibility: hidden;
+}
+
+hr {
+  border: 0;
+  clear:both;
+  width: 80%;
+  background-color:#000000;
+  height: 0.5px;
+}
+
+.burger-item {
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    white-space: nowrap ;
+    font-family: Yandex Sans Display;
+    font-style: normal;
+    font-color: #000000;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+    color:inherit;
+
+}
+
+#burger-bottom {
+    margin-bottom: 10px;
+}
+
+
+.info {
+    margin-top: 2%;
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    color: #000000;
+}
+
+.about-me-subcontainer2 {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.github {
+    background: #FFFFFF;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    color:inherit;
+}
+
+.why-me {
+    margin-top: 2vh;
+
+    background: #FFFFFF;
+    border-radius: 20px;
+    font-family: Yandex Sans Display;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+#github-icon {
+    margin-left: 1vh;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+       width: 10%;
+
+}
+
+#icon-cont {
+    margin-left: 1vh;
+    margin-top: 1vh;
+    display: flex;
+    align-items: center;
+}
+
+.why {
+    font-size: calc(7px + 1.5vw);
+    font-family: Yandex Sans Display;
+}
+
+#items {
+    margin-top: -2vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#passion-list {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#about-passion {
+    margin-left: 1vh;
+    margin-top: 1vh;
+}
+
+.ul-list {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.passion-icon {
+    width: 15%;
+}
+
+@media (max-aspect-ratio: 1/1) {
+    .info {
+        margin-top: 2%;
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .passions {
+        background: #FFFFFF;
+        border-radius: 20px;
+        display: flex;
+        flex-direction:column;
+        width: 90vw;
+    }
+
+    .about-me-subcontainer2 {
+        margin-top: 2vh;
+        width: 90vw;
+    }
+
+    .why {
+        font-size: calc(7px + 3vw);
+        font-family: Yandex Sans Display;
+    }
+
+    .about-me-text {
+        min-width: 6%;
+        font-size: calc(8px + 3vw);
+        font-family: Yandex Sans Display;
+        text-align: center;
+    }
+    .passion-icon {
+        width: 10%;
+    }
+
+    .about-me-text1 {
+        min-width: 6%;
+        margin-left: 2%;
+        font-size: calc(8px + 3vw);
+        font-family: Yandex Sans Display;
+        text-align: center;
+    }
+
+    #about-passion {
+        margin-left: 1vh;
+        margin-top: 1vh;
+        font-size: calc(8px + 4vw);
+    }
+
+    .work-yandex {
+        font-size: calc(8px + 2vw);
+    }
+
+    .about-me-item {
+        margin-left: 2vw;
+    }
+
+    #about-me-bottom {
+        flex-direction: column;
+    }
+
+    .person-icon {
+        width: 10%;
+    }
+
+    #title {
+        font-size: calc(8px + 4vw);
+        margin-left: 3vw;
+    }
+
+    .me-pic {
+        margin-left: 3vw;
+        margin-top: 3vw;
+        margin-bottom: 1vw;
+        margin-right: 3vw;
+        border-radius: 20px;
+        width: 94%;
+    }
+}
+
+#icon-container {
+    right: 6%;
+    top: 6%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+}

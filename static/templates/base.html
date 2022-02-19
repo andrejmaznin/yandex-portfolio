@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" style=>
+<head>
+    <link rel="stylesheet" type="text/css" href="static/css/style.css"/>
+    <meta charset="UTF-8">
+    <title>Andrew Maznin</title>
+</head>
+<body>
+<script src="/static/templates/burger-menu.js"></script>
+
+{% block content %}Main{% endblock %}
+<!-- Begin page content -->
+<div id="burger-menu-container">
+    <div id="burger-menu" onclick="MenuClick()">
+        <div class="stripe" id="top"></div>
+        <div class="stripe"></div>
+        <div class="stripe" id="bottom"></div>
+    </div>
+
+    <nav id="burger-menu-opened">
+        <a class="burger-item" href="/">Видео</a>
+        <hr/>
+        <a class="burger-item" href="/about-me">Общая информация</a>
+        <hr/>
+        <a class="burger-item" href="/info">Увлечения</a>
+        <hr/>
+        <a class="burger-item" id="burger-bottom" target="_blank" href="https://github.com/andrejmaznin">Github</a>
+    </nav>
+</div>
+</body>
+</html>

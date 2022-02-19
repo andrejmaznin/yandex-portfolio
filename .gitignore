@@ -1,0 +1,25 @@
+.venv/
+.venv39/
+.idea/
+__pycache__/
+.pytest_cache/
+.mypy_cache/
+.env
+.env.datasource
+.env.notifications
+.env.search
+.env.email_parsing
+.env.flight-review
+.DS_Store
+.coverage
+.vscode
+requirements.txt
+*_pb2.py
+*_pb2.pyi
+*_pb2_grpc.py
+node_modules/
+sample.js
+*.mo
+# for local testing
+_client.py
+tmp
