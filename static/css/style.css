@@ -31,10 +31,7 @@ body {
     user-select: none;
     z-index: 1;
 }
-#MainPageVideo {
-    height: 100vh;
-    z-index: 0;
-}
+
 
 #SoundIcon {
     margin-top: 4vh;
@@ -150,6 +147,11 @@ body {
         height: 40vh;
         border-radius: 20px;
         display: flex;
+    }
+
+    #MainPageVideo {
+        width: 100vw;
+        z-index: 0;
     }
 }
 
@@ -442,10 +444,14 @@ hr {
         border-radius: 20px;
         width: 94%;
     }
+    #MainPageVideo {
+        height: 100vh;
+        z-index: 0;
+    }
 }
 
 #icon-container {
-    right: 6%;
+    right: 3%;
     top: 6%;
     position: absolute;
     display: flex;
